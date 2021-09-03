@@ -38,7 +38,7 @@ public class ArrayListSample {
 		System.out.print("arraylist : " + arraylist + "\n");
 		System.out.println("arraylist size :" + arraylist.size());
 
-//		arraylist.sort(Comparator.naturalOrder());
+ 		arraylist.sort(Comparator.naturalOrder());
 		System.out.print("arraylist sort Comparator naturalOrder :" + arraylist + "\n");
 
 		Collections.sort(arraylist);
