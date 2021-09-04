@@ -5,13 +5,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Spliterator;
 
 public class ArrayListSample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub test
 				
 		ArrayList<String> arraylist = new ArrayList<>();
 		//use add method with index
