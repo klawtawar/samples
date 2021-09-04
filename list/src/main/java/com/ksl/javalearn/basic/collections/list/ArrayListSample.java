@@ -51,7 +51,7 @@ public class ArrayListSample {
 			System.out.println("arraylist iterator  : " + iterator.next());
 		}
 		
-		//
+		//use iterator to iterate each element of array list
 		Iterator<String> listiterator = arraylist.listIterator();
 		while(listiterator.hasNext()) {
 			System.out.println("arraylist listiterator  : " + listiterator.next());
