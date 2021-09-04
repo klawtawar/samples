@@ -45,6 +45,9 @@ public class ArrayListSample {
 			System.out.println("arraylist at index no " + i + " : " + arraylist.get(i));
 		}
 		
+		for(String element : arraylist) {
+		    System.out.println("for element in arraylist : " + element);
+		}
 		//use iterator to iterate each element of array list
 		Iterator<String> iterator = arraylist.iterator();
 		while(iterator.hasNext()) {
@@ -57,7 +60,7 @@ public class ArrayListSample {
 			System.out.println("arraylist listiterator  : " + listiterator.next());
 		}
 		
-		System.out.println("arraylist listIterator : " + arraylist.listIterator());
+	//	System.out.println("arraylist listIterator : " + arraylist.listIterator());
 		
 		arraylist.remove(1);
 		
@@ -85,11 +88,11 @@ public class ArrayListSample {
 		//convert ArrayList to Array
 		myArray = arraylist.toArray(myArray);
 		//print Array
-        System.out.println("ArrayList to Array :" + myArray.toString()); 
+        System.out.println("ArrayList to Array to string :" + Arrays.toString(myArray)); 
         
     	//	arraylist.toString();
 
-        System.out.println("ArrayList to Array to String :" + Arrays.asList(myArray));
+        System.out.println("ArrayList to Array to as list :" + Arrays.asList(myArray));
 
 		System.out.println("arraylist isEmpty : " + arraylist.isEmpty());
 
