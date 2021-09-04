@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Spliterator;
 
@@ -13,22 +14,49 @@ public class ArrayListSample {
 		// TODO Auto-generated method stub test
 				
 		ArrayList<String> arraylist = new ArrayList<>();
+		//use add method with index
 		arraylist.add(0, "Kansas");
 		arraylist.add(1, "Missourie");			
 		arraylist.add(2, "Arkansas");
 		arraylist.add(3, "Texas");
 		arraylist.add(4, "Ohio");
+		
+		//use add method without index
 		arraylist.add("Nevada");
 		
-		System.out.println("arraylist get 1 " + arraylist.get(1));
+		//print element  at index 1 with get method
+		System.out.println("arraylist get element 1 " + arraylist.get(1));
 		
+		//print element  at last index using get method
+		System.out.println("arraylist get last  element " + arraylist.get(arraylist.size()-1));
+		
+		//verify if particular element exist with contains method
 		System.out.println("arraylist contains Florida " + arraylist.contains("Florida"));
+		
 		
 		ArrayList<String> arraylistNew = new ArrayList<>();
 		arraylistNew.add("Arizona");
 		
+		//Use equal method to compare two different array list
 		System.out.println("arraylist equals arraylistNew : " + arraylist.equals(arraylistNew));
 
+		//use for loop to print each element of arraylist
+		for(int i=0; i<arraylist.size(); i++) {
+			System.out.println("arraylist at index no " + i + " : " + arraylist.get(i));
+		}
+		
+		//use iterator to iterate each element of array list
+		Iterator<String> iterator = arraylist.iterator();
+		while(iterator.hasNext()) {
+			System.out.println("arraylist iterator  : " + iterator.next());
+		}
+		
+		//
+		Iterator<String> listiterator = arraylist.listIterator();
+		while(listiterator.hasNext()) {
+			System.out.println("arraylist listiterator  : " + listiterator.next());
+		}
+		
 		System.out.println("arraylist listIterator : " + arraylist.listIterator());
 		
 		arraylist.remove(1);
