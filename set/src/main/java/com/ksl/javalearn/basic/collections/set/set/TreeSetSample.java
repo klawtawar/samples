@@ -96,10 +96,6 @@ public class TreeSetSample {
 	    System.out.println("After removing all " + setTreeSet);
 	    
 	    System.out.println("Check if set is empty " + setTreeSet.isEmpty());
-
-
-
-
 	}
 
 }
