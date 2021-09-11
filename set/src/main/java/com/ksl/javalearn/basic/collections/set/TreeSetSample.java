@@ -1,4 +1,4 @@
-package com.ksl.javalearn.basic.collections.set.set;
+package com.ksl.javalearn.basic.collections.set;
 
 import java.util.List;
 import java.util.ArrayList;

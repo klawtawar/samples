@@ -1,4 +1,4 @@
-package com.ksl.javalearn.basic.collections.set.set;
+package com.ksl.javalearn.basic.collections.set;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -14,14 +14,13 @@ public class LinkedHashSetSample {
 		//Create a Set
 		LinkedHashSet<String> linkedhashset = new LinkedHashSet<String>();
 			
-		//Add Element to Set	    	    		
-		linkedhashset.add("Ohio");		
-		linkedhashset.add("Ohio");
-		linkedhashset.add("Texas");
-		linkedhashset.add("Kansas");
-		linkedhashset.add("Arkansas");
-		linkedhashset.add("Nevada");
-		linkedhashset.add("Albama");
+		//Add Element to Set	
+		
+	     for(String str: Arrays.asList("Ohio", "Ohio", "Texas", "Kansas", "Arkansas", "Nevada","Albama" )){
+
+	        linkedhashset.add(str);		
+		
+	        }
 		
 	    //Print set elements		
 		System.out.println(linkedhashset);
@@ -41,7 +40,6 @@ public class LinkedHashSetSample {
 		for(int i=0; i<linkedhashset.size() ; i++) {
 			System.out.println(str[i]);
 		}
+		
+}}
 
-	}
-
-}
