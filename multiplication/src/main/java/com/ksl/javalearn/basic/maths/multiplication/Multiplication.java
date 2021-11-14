@@ -1,4 +1,7 @@
-package om.ksl.javalearn.basic.maths.multiplication;
+package com.ksl.javalearn.basic.maths.multiplication;
+
+
+import com.ksl.javalearn.basic.maths.multiplication.Multiplication;
 
 public class Multiplication {
 	
